@@ -1,0 +1,213 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.c
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+% !TEX TS-program = xelatex
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\usepackage[utf8]{inputenc} 
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+\setmainfont{[Fontin.otf]}
+\usepackage{url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{newtxmath} 
+
+%\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+\xdefinecolor{pinegreen}{named}{PineGreen}
+\xdefinecolor{royalblue}{named}{RoyalBlue}
+\xdefinecolor{violet}{named}{RoyalPurple}
+
+\renewcommand{\footnotesize}{\normalsize}
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
+\usepackage{fullpage}
+\addtolength{\voffset}{0cm}
+\addtolength{\textheight}{5cm}
+\usepackage{hyperref} % Required for adding links	and customizing them
+ % Set link colors throughout the document
+
+\usepackage[margin=0.5in, bottom=-0.1in]{geometry}
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{2pt}{2pt}{2pt} % Spacing around sections
+\begin{document}
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\textcolor{royalblue}{\LARGE Rapha\"el \textsc{Romero}}\par}} % Your name
+%\par{\centering{\textbf{Machine Learning Engineer}\par} 
+\par{\centering{\textbf{Phd Student in Machine Learning}\par}
+%\par{\centering{\large{\em{Looking for a 4-6 months research internship starting Fall 2019}}\par} 
+
+\section{Personal Data}
+
+\begin{tabular}{r|l}
+	% \textsc{Place and Date of Birth:} & France |  12 December 1995 \\
+	% \textsc{Address:} & 83 Rue De La Tombe Issoire 75014 PARIS \\
+	% \textsc{Contact:} & +336 65 75 36 73  | \space \href{mailto:romeroraphael3@gmail.com}{romeroraphael3@gmail.com}\\
+	
+	\textsc{Contact:} & +336 65 75 36 73  | \space \href{mailto:raphael.romero@ugent.be}{raphael.romero@ugent.be} \\
+	\textsc{website:} & \href{https://rapharomero.github.io/}{Research website} \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{p{2cm}p{15cm}}
+
+	\textsc{2020 - Now} & \textcolor{royalblue}{\textbf{Ghent University}} Phd Student in Machine Learning
+	\begin{itemize}
+		\item \textcolor{pinegreen}{\textbf{Project:}} \textcolor{violet}{Latent Variable models for static and temporal graphs} 
+		\item \textcolor{pinegreen}{\textbf{Supervisor:}} Prof. Tijl De Bie 
+	\end{itemize}                                                                                            \\
+
+
+	\textsc{2017}-2018  & \textcolor{royalblue}{\textbf{ENS Paris-Saclay}}, \emph{Master 2 MVA}, Paris, France
+	\begin{itemize}
+		\item \textcolor{violet}{Top 1 Master in Machine learning and Computer Vision  in France}
+		\item \textcolor{pinegreen}{\textbf{Modules}}: Convex Optimization, Probabilistic Graphical Models,
+		      Computational Statistics, 3D Computer Vision, Object Recognition,
+		      Audio Indexing and transformations, Audio Signal Processing:
+		      Time-Frequency Analysis, Kernel Methods for Machine Learning,
+		      High-dimensional Statistics and learning, Deep Learning
+		\item With Honors
+	\end{itemize}
+	\\
+
+
+
+	%------------------------------------------------
+
+	\textsc{2015}-2017  & \textcolor{royalblue}{\textbf{Telecom Paristech}}, \emph{Master of Engineering}, Paris, France
+	\begin{itemize}
+		\item \textcolor{violet}{Top 5 French Engineering "Grandes \'{e}coles"}
+		\item \textcolor{pinegreen}{\textbf{Modules}}: Applied Mathematics (Probability, Statistics, Stochastic Calculus, Signal and Image Processing), Data Sciences (Supervised and Unsupervised Learning, Convex Optimization), Computer Programming (Python, Matlab, C++, R)
+		\item \textbf{GPA first year : 3.70,  second year : 3.93}
+
+	\end{itemize}
+	\\
+	%------------------------------------------------
+
+	\textsc{2013}-2015  & \textcolor{royalblue}{\textbf{Lyc\'{e}e Charlemagne}}, \emph{CPGE MPSI/MP*}, Paris, France
+	\begin{itemize}
+		\item \textcolor{violet}{Intensive preparation to the "Grandes Ecoles" entrance exams}
+		\item \textcolor{pinegreen}{\textbf{Modules:}} Mathematics, Physics and Computer Science
+	\end{itemize}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{tabular}{p{2cm}p{15cm}}
+
+	\textsc{2020-Now} & \textcolor{royalblue}{\textbf{PhD Student/ Research Assistant in AIDA-UGent}}
+	\begin{itemize}
+		\item \textcolor{pinegreen}{\textbf{Research}} Focusing on Latent variable models for general graph data. Teaching assistant in the "AI Research Seminar" course.
+		\item \textcolor{pinegreen}{\textbf{Event organization}} Part of the organizing team of ECML-PKDD 2020, as well as the ECML-PKDD 2021 Satellite Event, hosted by the AIDA group in Ghent.
+	\end{itemize}  \\
+	%------------------
+	\textsc{2019-2020} & \textcolor{royalblue}{\textbf{Data scientist at Shift Technology}}
+	\begin{itemize}
+		\item \textcolor{pinegreen}{\textbf{Data engineering:}} Preprocessing and migration between several relational data models.
+		\item \textcolor{pinegreen}{\textbf{Client project:}} Deployment of Shift's Force (fraud detection solution) at a client's fraud investigation department. Definition of decision rules with the fraud handlers, and adaptation of the graph-based network detection feature to the client's data.
+		\item \textcolor{pinegreen}{\textbf{Technologies used:}} C\#, SQL
+	\end{itemize}                                                               \\
+	\textsc{2018}      & \textcolor{royalblue}{\textbf{Internship at Jalgos A.I.}}
+
+	%------------------
+	\begin{itemize}
+		\item \textcolor{pinegreen}{\textbf{Research Project: }} Predicting the evolution of stock prices of big tech companies using financial news.
+		\item \textcolor{pinegreen}{\textbf{Client missions: }} Data visualization tool for the Soci\'{e}t\'{e} G\'{e}n\'{e}rale (bank), False alarm reduction for Scutum (video-surveillance company), Recommander System for Huh School (English Learning Application)
+		\item \textcolor{pinegreen}{\textbf{Technologies used: }} R, Shiny, PlotLy, MongoDB
+	\end{itemize}                                                               \\
+	%------------------------------------------------
+
+	\textsc{2016}-2018 & \textcolor{royalblue}{\textbf{Tutoring}}
+	\begin{itemize}
+		\item Homework support for high school and undergraduate students
+	\end{itemize}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+% Publications
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS 
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabular}{p{2cm}p{15cm}}
+	\textsc{Languages}    & \textsc{French}(Mothertongue), \textsc{English}(Fluent),   \textsc{Spanish}(C1),\textsc{Dutch}(B1), \textsc{German}(A1) \\
+	\textsc{Coding} & Currently working with Python (Numpy, Pandas, Matplotlib, Pytorch, Pytorch Lightning, Pyro...)	\\
+		 		   		 & Work experience with: R, C\#, SQL                                      \\
+	                     & School Experience with: C,  HTML/CSS, javascript, Java                     \\
+	\textsc{Deployment} & Work experience with Github Actions, Octopus Deploy, Teamcity\\
+
+	\\
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+% Extracurricular activities
+%----------------------------------------------------------------------------------------
+
+\section{Activities and Interests}
+\begin{tabular}{p{2cm}p{15cm}}
+
+	\textsc{2016}-2017 & \textcolor{royalblue}{\textbf{Vice-President of the Sound and Light Student Organization}}                                                            \\
+	                   & Had to handle professional sound and light equipments, ensuring the safety of the installations during student events                                 \\
+	                   & \textcolor{pinegreen}{20 000 \$ budget, 10-15 events per year, 10 people team}                                                                        \\
+	\\
+	%------------------------------------------------
+
+	\textsc{July}-2016 & \textcolor{royalblue}{\textbf{Volunteer Receptionist}}, Fortaleza, Brazil                                                                             \\
+	                   & \textcolor{pinegreen}{Shifts, Responsibilities regarding up to 30 international costumers}                                                            \\
+	\\
+	\textsc{Music}     & \textbf{Piano}, Guitar, Music Production(Ableton Live) \\
+	\\
+	\textsc{Sport}     & \textbf{Running}, Bouldering, \textbf{Winter sports}(snowboarding)                                                                                                \\
+	\\
+	\textsc{Reading}   & Literature and philosophy                                                                                                                             \\
+\end{tabular}
+
+
+
+\end{document}
+
