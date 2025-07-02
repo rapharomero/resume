@@ -1,0 +1,208 @@
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+% \usepackage{fontspec} % For loading fonts
+
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} % For proper encoding of characters
+% \defaultfontfeatures{Mapping=tex-text}
+\usepackage{cmbright}
+\usepackage{url,parskip} % Formatting packages
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{newtxmath} 
+\usepackage[margin=0.8in]{geometry} % Set balanced margins
+\usepackage{hyperref} % Required for adding links and customizing them
+\usepackage{enumitem} % Enable optional arguments on details/enumerate
+\hypersetup{colorlinks=true, urlcolor=RoyalBlue}
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Increased font size to match rule thickness
+\titlespacing{\section}{0pt}{8pt}{4pt} % Better spacing around sections
+\begin{document}
+\pagestyle{empty} % Removes page numbering
+
+% \newcommand{\blue}[1]{\textcolor{RoyalBlue}{#1}} % Command to color text in blue
+\newcommand{\blue}[1]{{#1}} % Command to color text in blue
+% \newcommand{\green}[1]{\textcolor{PineGreen}{#1}} % Command to color text in green
+\newcommand{\green}[1]{{#1}} % Command to color text in green
+
+% \newcommand{\purple}{textcolor{RoyalPurple}}
+\newcommand{\purple}[1]{#1}
+\par{\centering{\blue{\LARGE Rapha\"el \textsc{Romero}}\par}} % Your name
+\par{\centering{\textbf{Post Doctoral Researcher in Machine Learning}\par}} 
+\par{\centering{\textsc{Contact:} +336 65 75 36 73 | \href{mailto:raphael.romero@ugent.be}{raphael.romero@ugent.be}\par}} 
+
+
+% Toggle for showing/hiding details
+\newif\ifshowdetails
+\showdetailstrue % Set to \showdetailsfalse to hide all details
+
+% Create environment for details that can be toggled
+\newenvironment{details}[1][]{
+    \ifshowdetails
+        \begin{itemize}[leftmargin=0pt, label={}, #1]
+        \setlength{\itemsep}{0pt} % No space between items
+        \setlength{\parskip}{0pt} % No space between paragraphs
+        \setlength{\parindent}{0pt} % No indentation
+    \fi
+}{
+    \ifshowdetails
+        \end{itemize}
+    \fi
+}
+
+% Command to show/hide individual detail items
+\newcommand{\detailitem}[1]{%
+    \ifshowdetails
+        \item #1
+    \fi
+}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+
+
+\textsc{2020--2024}  &\blue{\textbf{Ghent University}} PhD in Machine Learning
+\begin{details}
+\detailitem{\green{\textbf{Supervisors:}} Jefrey Lijffijt, Tijl De Bie}
+\detailitem{\green{\textbf{Thesis:}} \textit{Modeling Weighted and Temporal Graphs: Methods and Evaluation}}
+\end{details}
+\\
+
+\textsc{2017}--2018 & \blue{\textbf{ENS Paris-Saclay}}, \emph{Master 2 MVA}, Paris, France 
+\begin{details}
+\detailitem{\purple{Top 1 Master's program in Machine Learning and Computer Vision in France}}
+\end{details}
+\\
+
+\textsc{2015}--2017 & \blue{\textbf{Telecom Paristech}}, \emph{Master of Engineering}, Paris, France 
+\begin{details}
+\detailitem{\purple{Top 5 French Engineering ``Grandes \'{E}coles''}}
+\detailitem{\green{\textbf{Majors}}: Applied Mathematics, Data Science and Computer Science}
+% \detailitem{\textbf{GPA first year: 3.70, second year: 3.93}}
+\end{details}\\
+
+\textsc{2013}--2015 & \blue{\textbf{Lyc\'{e}e Charlemagne}}, \emph{CPGE MPSI/MP*}, Paris, France 
+\begin{details}
+\detailitem{\purple{Intensive preparation for the ``Grandes \'{E}coles'' entrance exams}}
+\detailitem{\green{\textbf{Modules:}} Mathematics, Physics and Computer Science}
+\end{details}
+
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+
+\textsc{2024--Now} &\blue{\textbf{Ghent University}} Postdoctoral Researcher in Machine Learning
+\begin{details}
+\detailitem{\green{\textbf{Supervisors:}} Jefrey Lijffijt, Tijl De Bie}
+\detailitem{\green{\textbf{Topics:}}}
+\begin{itemize}[leftmargin=*, label={o}]
+    \item Multi-resolution analysis of dynamic networks (with Alex Modell and Nick Heard)
+    \item Ecobird AI (with Lucy Peters, Luc Lens and Frederic Verbruggen)
+    \item Soccer event forecasting (with Jesse Davis and Maaike van Rooy)
+\end{itemize}
+\end{details}\\
+
+\textsc{2020--Present} &\blue{\textbf{Ghent University}} PhD Research Assistant
+\begin{details}
+    \detailitem{\green{Involved in the organization of ECML-PKDD 2020 (online)}}
+    \detailitem{\green{Teaching assistant in the AI Research Seminar class, taught by Prof. Tijl De Bie}}
+    \detailitem{\green{Supervision of 2 master's students}}
+\end{details}
+\\
+
+\textsc{2019--2020} &\blue{\textbf{Shift Technology}} Full-Time Data Scientist 
+
+\begin{details}
+\detailitem{\green{\textbf{Tasks:}} Data engineering, client training and network-based detection model implementation. Technologies: C\#, SQL, TeamCity, Octopus Deploy}
+\end{details}
+\\
+
+\textsc{2018} &\blue{\textbf{Jalgos A.I.}} Data Science Intern
+% \begin{details}
+% \detailitem{\green{\textbf{Research Project:}} Predicting the evolution of stock prices of big tech companies using financial news.}
+% \detailitem{\green{\textbf{Client missions:}} Data visualization for business intelligence, computer vision applied to false alarm reduction in video surveillance, recommender system for an English Learning App.}
+% \detailitem{\green{\textbf{Technologies used:}} R, Shiny, Plotly, MongoDB}
+% \end{details}
+\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%Reviewing 
+%----------------------------------------------------------------------------------------
+\section{Reviewing}
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+\textsc{2025} & \blue{ECML-PKDD,EWAF} \\
+\textsc{2024} & \blue{ECML-PKDD (Support), EWAF(Support)}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS AND CONFERENCES
+%----------------------------------------------------------------------------------------
+
+\section{Publications and conferences}
+\subsection*{Journal Articles}
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+\textsc{2024} & \textbf{Romero, R.}, Buyl, M., De Bie, T., \& Lijffijt, J. (2024). Exploring the Performance of Continuous-Time Dynamic Link Prediction Algorithms. \emph{Applied Sciences}, 14(8), 3516. \\
+\textsc{2023} & \textbf{Romero, R.}, Lijffijt, J., Rastelli, R., Corneli, M., \& De Bie, T. (2023). Gaussian Embedding of Temporal Networks. \emph{IEEE Access}, 11, 117971–117983. \\
+\end{tabular}
+
+\subsection*{Conference Papers}
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+\textsc{2022} & \textbf{Romero, R.}, \& De Bie, T. (2022). Embedding-based Next Song Recommendation for Playlists. In \emph{Proceedings of ESANN 2022}. \\
+\end{tabular}
+
+\subsection*{Preprints}
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+\textsc{2024} & Buyl, M., Rogiers, A., Noels, S., Bied, G., Domínguez-Catena, I., Heiter, E., \dots \textbf{Romero, R.} (2024). Large Language Models Reflect the Ideology of Their Creators. arXiv:2410.18417. \\
+\textsc{2025} & \textbf{Romero, R.}, De Bie, T., Heard, N., \& Modell, A. (2025). Multiresolution Analysis and Statistical Thresholding on Dynamic Networks. arXiv:2506.01208. \\
+\textsc{2025} & Johary, I., \textbf{Romero, R.}, Mara, A. C., \& De Bie, T. (2025). JobHop: A Large-Scale Dataset of Career Trajectories. arXiv:2505.07653. \\
+\textsc{2025} & Pérez, M., \textbf{Romero, R.}, Kang, B., De Bie, T., Lijffijt, J., \& Laclau, C. (2025). SimHawNet: A Modified Hawkes Process for Temporal Network Simulation. arXiv:2203.07260. \\
+\end{tabular}
+
+
+\section{Research Interests}
+
+Network Science, Temporal Network Analysis, Weighted Graphs, Spatio-Temporal Data, Dynamical Systems, Recommender Systems, AI Fairness, AI for Ecology, AI for Job Market Analysis, Urban Mobility and Planning, AI for Climate Change, AI for Social Good.
+
+%----------------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Teaching Experience}
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+\textsc{2022--2023} & \blue{\textbf{Teaching Assistant}} AI Research Seminar, Ghent University \\
+\textsc{2022--2023} & \blue{\textbf{Thesis Supervision}} 
+\begin{details}
+
+\detailitem{\green{Gilles De Praetere (2024--2025): "Towards Intelligent Defaults in Chart Design"}}
+\detailitem{\green{Dries Vansteelant (2023--2024): "Tools for Temporal Network Analysis in Python: Benchmarking and Improvements"}}
+\end{details}\\
+\end{tabular}
+
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Others}
+
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+\textsc{Programming} & Python, MATLAB, R, C++, C\#, SQL (fluent) \\
+                     & C, HTML/CSS, JavaScript, Java (experience) \\
+\textsc{Language}    & \textsc{French} (Mother tongue), \textsc{English} (Fluent), \textsc{Spanish} (Fluent), \textsc{Dutch} (B2) \\
+\end{tabular}
+
+\end{document}
