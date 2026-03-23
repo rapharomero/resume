@@ -1,0 +1,223 @@
+% !TEX program = xelatex
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+
+% \usepackage{fontspec} % For loading fonts
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} % For proper encoding of characters
+% \usepackage{fontenc} % For proper encoding of characters
+% \defaultfontfeatures{Mapping=tex-text}
+
+
+\usepackage{cmbright}
+
+\usepackage{url,parskip} % Formatting packages
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{newtxmath} 
+\usepackage[margin=0.8in]{geometry} % Set balanced margins
+\usepackage{hyperref} % Required for adding links and customizing them
+\usepackage{enumitem} % Enable optional arguments on details/enumerate
+\hypersetup{colorlinks=true, urlcolor=RoyalBlue}
+\usepackage{fontawesome5}
+\usepackage{academicons}
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\bfseries\raggedright}{}{0em}{}[\titlerule] % Increased font size to match rule thickness
+\titlespacing{\section}{0pt}{8pt}{4pt} % Better spacing around sections
+\begin{document}
+\pagestyle{empty} % Removes page numbering
+
+\newcommand{\blue}[1]{\textcolor{RoyalBlue}{#1}} % Command to color text in blue
+% \newcommand{\blue}[1]{{#1}} % Command to color text in blue
+\newcommand{\green}[1]{\textcolor{PineGreen}{#1}} % Command to color text in green
+% \newcommand{\green}[1]{{#1}} % Command to color text in green
+
+% \newcommand{\purple}{textcolor{RoyalPurple}}
+\newcommand{\purple}[1]{#1}
+\par{\centering{\blue{\LARGE Rapha\"el Romero}\par}} % Your name
+\par{\centering{\textbf{Postdoctoral Researcher in Machine Learning}\par}} 
+% \par{\centering{\textbf{Contact:} +336 65 75 36 73 | \href{mailto:raphael-romero@outlook.com}{raphael-romero@outlook.com} | \href{https://github.com/rapharomero}{https://github.com/rapharomero} \par}} 
+
+\par{
+\centering{
+\href{mailto:raphael-romero@outlook.com}{\faEnvelope\ raphael-romero@outlook.com} | 
+\href{https://github.com/rapharomero}{\faGithub\ rapharomero} | 
+\href{https://scholar.google.com/citations?user=R9bXarYAAAAJ&hl=fr}{\aiGoogleScholar\ Google Scholar} 
+\par
+}
+}
+
+
+% Toggle for showing/hiding details
+\newif\ifshowdetails
+\showdetailstrue % Set to \showdetailsfalse to hide all details
+
+% Create environment for details that can be toggled
+\newenvironment{details}[1][]{
+    \ifshowdetails
+        \begin{itemize}[leftmargin=0pt, label={}, #1]
+        \setlength{\itemsep}{0pt} % No space between items
+        \setlength{\parskip}{0pt} % No space between paragraphs
+        \setlength{\parindent}{0pt} % No indentation
+    \fi
+}{
+    \ifshowdetails
+        \end{itemize}
+    \fi
+}
+
+% Command to show/hide individual detail items
+\newcommand{\detailitem}[1]{%
+    \ifshowdetails
+        \item #1
+    \fi
+}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Work Experience}
+
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+\textbf{2024--Now} & \blue{\textbf{Ghent University}} Postdoctoral Researcher
+\begin{details}
+\detailitem{\green{\textbf{Supervisors:}} Jefrey Lijffijt, Tijl De Bie}
+\detailitem{\green{\textbf{Summary:}} Applied machine learning for temporal and graph-structured data. Projects included multi-resolution analysis of dynamic networks, ML methods for bird ecology (Ecobird AI), and forecasting soccer events using spatio-temporal data.}
+\detailitem{\green{\textbf{Collaborations:}} Jesse Davis and Maaike van Roy (KU Leuven), Lucy Mitchell, Luc Lens and Frederic Verbruggen (Ghent University).}
+\end{details}\\
+\textbf{2020--2024} & \blue{\textbf{Ghent University}} Doctoral Researcher
+\begin{details}
+\detailitem{\green{\textbf{Supervisors:}} Jefrey Lijffijt, Tijl De Bie}
+\detailitem{\green{\textbf{Summary:}} PhD on \textit{Modeling Weighted and Temporal Graphs: Methods and Evaluation}. Research on temporal network analysis, graph embedding, and next-event prediction.}
+\detailitem{\green{\textbf{Collaborations:}} Charlotte Laclau and Mathilde Pérez (Telecom Paris), Marco Corneli (Université de Nice--Côte d'Azur), Riccardo Rastelli (University of Dublin), Nick Heard and Alex Modell (summer visit to Imperial College London in 2024).}
+\end{details}\\
+
+\textbf{2019--2020} & \blue{\textbf{Shift Technology}} Data Scientist
+\begin{details}
+\detailitem{\green{\textbf{Summary:}} Worked on data engineering, deployment, and client delivery. Implemented network-based fraud detection models and maintained production pipelines.}
+\end{details}
+\\
+
+\textbf{2018} & \blue{\textbf{Jalgos A.I.}} Data Science Intern
+\begin{details}
+\detailitem{\green{\textbf{Summary:}} Internship on predicting stock price movements using financial news, plus client projects on data visualization and predictive modeling.}
+\end{details}
+\\
+
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+
+\textbf{2020--2024}  & \blue{\textbf{Ghent University}} PhD in Machine Learning, Ghent, Belgium
+\begin{details}
+\detailitem{\green{\textbf{Supervisors:}} Jefrey Lijffijt, Tijl De Bie}
+\detailitem{\green{\textbf{Thesis:}} \textit{Modeling Weighted and Temporal Graphs: Methods and Evaluation}}
+\end{details}
+\\
+
+\textbf{2017--2018} & \blue{\textbf{ENS Paris-Saclay}}, \emph{Master 2 MVA (Mathematics, Computer Vision, Machine Learning)}, Paris, France 
+\begin{details}
+\detailitem{\green{\textbf{Courses:}} Probabilistic graphical models, Convex optimization and applications in machine learning, 3D Computer Vision, Object Recognition and Computer Vision, Computational statistics, Kernel Methods for Machine Learning, High Dimensional Statistics, Audio Signal Processing - Time-Frequency Analysis, Deep Learning, Audio signal Analysis Indexing and Transformations
+}
+\end{details}
+\\
+
+\textbf{2015--2017} & \blue{\textbf{Telecom Paristech}}, \emph{Master of Engineering}, Paris, France 
+\begin{details}
+\detailitem{\green{\textbf{Majors:}} Applied Mathematics, Data Science, Computer Science}
+\end{details}\\
+
+\textbf{2013--2015} & \blue{\textbf{Lyc\'{e}e Charlemagne}}, \emph{CPGE MPSI/MP*}, Paris, France 
+\begin{details}
+\detailitem{\green{\textbf{Modules:}} Mathematics, Physics, Computer Science}
+\end{details}
+
+\end{tabular}
+
+\section{Technical Experience \& Languages}
+
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+\textbf{Libraries} & Python, PyTorch, JAX, Pyro, PyTorch Geometric, NetworkX, Pandas, NumPy, SciPy \\
+\textbf{Programming} & MATLAB, R, C++, C\#, SQL, C, HTML/CSS, JavaScript, Java \\
+\textbf{DevOps \& Tools} & TeamCity, Octopus Deploy, MongoDB \\
+\textbf{Languages}  & French (native), English (fluent), Spanish (fluent), Dutch (B1) \\
+\end{tabular}
+%----------------------------------------------------------------------------------------
+%Reviewing 
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS AND CONFERENCES
+%----------------------------------------------------------------------------------------
+\clearpage
+% \section{International Collaborations}
+% \begin{tabular}{p{2.8cm}p{13.5cm}}
+%     \textbf{2025} & Collaboration with Jesse Davis and Maaike van Rooy on soccer event forecasting using spatio-temporal data \\
+%     \textbf{2025} & Collaboration with Lucy Peters, Luc Lens and Frederic Verbruggen on AI for bird ecology (\emph{Ecobird AI} project) \\
+%     \textbf{2023} & Collaboration with Marco Corneli and Riccardo Rastelli on Gaussian Embedding of Temporal Networks \\
+%     \textbf{2021-present} & Collaboration with Charlotte Laclau and Mathilde Pérez on temporal network simulation using Hawkes processes \\
+
+% \textbf{2024} & \blue{\textbf{Imperial College London}} Collaboration with Prof. Nick Heard and Dr. Alex Modell on multiresolution analysis of dynamic networks
+% \end{tabular}
+\section{Publications and conferences}
+
+\subsection*{Journal Articles}
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+\textbf{2026} & Buyl, M., Rogiers, A., Noels, S., Bied, G., Domínguez-Catena, I., Heiter, E., Johary, I., Mara, A. C., \textbf{Romero, R.}, Lijffijt, J., \& De Bie, T. \emph{Large Language Models Reflect the Ideology of Their Creators.} \blue{npj Artificial Intelligence}, 2(1), 7. \\
+\textbf{2025} & Pérez, M., \textbf{Romero, R.}, Kang, B., et al. \emph{SimHawNet: A Modified Hawkes Process for Temporal Network Simulation.} \blue{Data Mining and Knowledge Discovery}, 39(5), 48. \\
+\textbf{2024} & \textbf{Romero, R.}, Buyl, M., De Bie, T., \& Lijffijt, J. \emph{Exploring the Performance of Continuous-Time Dynamic Link Prediction Algorithms.} \blue{Applied Sciences}, 14(8), 3516. \\
+\textbf{2023} & \textbf{Romero, R.}, Lijffijt, J., Rastelli, R., Corneli M., \& De Bie, T. \emph{Gaussian Embedding of Temporal Networks.} \blue{IEEE Access}, 11, 117971--117983. \\
+\end{tabular}
+
+\subsection*{Conference Papers}
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+\textbf{2025} & \textbf{Romero, R.}, Modell, A., Heard, N., \& De Bie, T. \emph{Multiresolution Analysis and Statistical Thresholding on Dynamic Networks.} In \blue{Advances in Neural Information Processing Systems (NeurIPS)} 2025.\\
+\textbf{2025} & Johary, I., \textbf{Romero, R.}, Mara, A. C., \& De Bie, T. \emph{JobHop: A Large-Scale Dataset of Career Trajectories.} In \blue{IEEE International Conference on Big Data (BigData)} 2025, pp. 2184-2191.\\
+\textbf{2025} & \textbf{Romero, R.}, Daems, R., \& De Bie, T. \emph{Temporal Graph AutoEncoder: Mapping Dynamic Graphs to Dynamical Systems with Neural ODEs.} In \blue{NeurIPS 2025 Workshop on New Perspectives in Graph Machine Learning (NPGML)}\\
+% Raphaël Romero, Lucy Mitchell, Frederick Verbruggen, Luc Lens, and Jefrey Lijffijt
+\textbf{2025} & \textbf{Romero, R.}, Mitchell, L., Verbruggen, F., Lens, L., Lijffijt, J. \emph{Characterizing Bird Movement Using Spectral Clustering.} In \blue{AALTD Workshop at ECML-PKDD} 2025, Porto.\\
+\textbf{2025} & \textbf{Romero, R.}, Mashayekhi Y., Lai F., Van Roy M., De Bie T., Davis J. \emph{Next-Event Prediction in Soccer: Assessing the Impact of Player and Team Information.} In \blue{12th Workshop on Machine Learning for Sports Analytics at ECML-PKDD} 2025, Porto.\\
+\textbf{2022} & \textbf{Romero, R.}, \& De Bie, T. \emph{Embedding-based Next Song Recommendation for Playlists.} In Proceedings of \blue{ESANN} 2022. \\
+\end{tabular}
+
+\subsection*{Preprints}
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+\textbf{2026} & Pérez, M., \textbf{Romero, R.}, Lijffijt, J., \& Laclau, C. \emph{How Predicted Links Influence Network Evolution: Disentangling Choice and Algorithmic Feedback in Dynamic Graphs.} arXiv preprint arXiv:2603.03945. \\
+
+\end{tabular}
+
+
+\section{Research Interests}
+
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+ & Temporal Network Analysis, Weighted Graphs, Spatio-Temporal Data, Dynamical Systems, Recommender Systems, AI Fairness, AI for Ecology, AI for Job Market Analysis, Urban Mobility and Planning, AI for Social Good.
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Teaching Experience}
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+\textbf{2022--2024} & {\textbf{Teaching Assistant}} AI Research Seminar, Ghent University \\
+\textbf{2022--2023} & {\textbf{Thesis Supervision}} 
+\begin{details}
+
+\detailitem{{Gilles De Praetere (2024--2025): "Towards Intelligent Defaults in Chart Design"}}
+\detailitem{{Dries Vansteelant (2023--2024): "Tools for Temporal Network Analysis in Python: Benchmarking and Improvements"}}
+\end{details}\\
+\end{tabular}
+
+
+\section{Reviewing}
+\begin{tabular}{p{2.8cm}p{13.5cm}}
+    \textbf{2024--2026} & Reviewer for {Data Mining and Knowledge Discovery} (journal), {ECML-PKDD} (conference), and {EWAF} (workshop) \\
+\end{tabular}
+
+
+\end{document}

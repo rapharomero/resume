@@ -1,0 +1,64 @@
+	Large language models reflect the ideology of their creators
+M Buyl, A Rogiers, S Noels, G Bied, I Dominguez-Catena, E Heiter, ...
+npj Artificial Intelligence 2 (1), 7
+	62	2026
+	Large language models reflect the ideology of their creators. arXiv
+M Buyl, A Rogiers, S Noels, G Bied, I Dominguez-Catena, E Heiter, ...
+arXiv preprint arXiv:2410.18417
+	11	2024
+	Large language models reflect the ideology of their creators, 2025
+M Buyl, A Rogiers, S Noels, G Bied, I Dominguez-Catena, E Heiter, ...
+URL https://arxiv. org/abs/2410.18417
+	6	
+	Gaussian embedding of temporal networks
+R Romero, J Lijffijt, R Rastelli, M Corneli, T De Bie
+IEEE Access 11, 117971-117983
+	3	2023
+	Embedding-based next song recommendation for playlists
+R Romero, T De Bie
+ESANN2022: the EEuropean Symposium on Artificial Neural Networks …
+	3	2022
+	SimHawNet: a modified Hawkes process for temporal network simulation
+M Perez, R Romero, B Kang, T De Bie, J Lijffijt, C Laclau
+Data Mining and Knowledge Discovery 39 (5), 48
+	2	2025
+	Multiresolution analysis and statistical thresholding on dynamic networks
+R Romero, T De Bie, N Heard, A Modell
+Advances in Neural Information Processing Systems (NeurIPS), 38, 2025
+	2	2025
+	Jobhop: A large-scale dataset of career trajectories
+I Johary, R Romero, AC Mara, T De Bie
+arXiv preprint arXiv:2505.07653
+	1	2025
+	New Perspectives on the Evaluation of Link Prediction Algorithms for Dynamic Graphs
+R Romero, T De Bie, J Lijffijt
+arXiv preprint arXiv:2311.18486
+	1	2023
+	How Predicted Links Influence Network Evolution: Disentangling Choice and Algorithmic Feedback in Dynamic Graphs
+M Perez, R Romero, J Lijffijt, C Laclau
+arXiv preprint arXiv:2603.03945
+		2026
+	Temporal Graph AutoEncoder: Mapping Dynamic Graphs to Dynamical Systems with Neural ODEs
+R Romero, R Daems, T De Bie
+New Perspectives in Graph Machine Learning
+		2025
+	Characterizing Bird Movement using Spectral Clustering
+R Romero, L Mitchell, F Verbruggen, L Lens, J Lijffijt
+10th Workshop on Advanced Analytics and Learning on Temporal Data (AALTD 2025)
+		2025
+	LARGE LANGUAGE MODELS REFLECT
+M Buyl, A Rogiers, S Noels, G Bied, I Dominguez-Catena, E Heiter, ...
+arXiv preprint arXiv:2410.18417
+		2024
+	Exploring the Performance of Continuous-Time Dynamic Link Prediction Algorithms
+R Romero, M Buyl, T De Bie, J Lijffijt
+Applied Sciences 14 (8), 3516
+		2024
+	Modeling Weighted and Temporal Graphs: Methods and Evaluation
+R Romero
+Ghent University
+		2024
+	Next-Event Prediction in Soccer: Assessing the Impact of Team and Player Information
+R Romero, Y Mashayekhi, F Lai, M Van, TDB Rooy, J Davis
+12th Workshop on Machine Learning and Data Mining for Sports Analytics …
+		
